@@ -12,7 +12,7 @@ public class ReferenceTypes {
 
         int[] numbers2 = {1, 2, 3, 4, 5};
 
-        for (int num: numbers2)
+        for (int num : numbers2)
             System.out.println(num);
 
         int[][] matrix = new int[3][3];
@@ -30,9 +30,9 @@ public class ReferenceTypes {
         }
 
         // with length, you can do enhanced 'for'
-        for (int[] i : matrix) {
-            for (int j : i) {
-                System.out.println(j);
+        for (int[] arrBase : matrix) {
+            for (int num : arrBase) {
+                System.out.println(num);
             }
         }
     }
