@@ -13,13 +13,12 @@ public class ForEach {
         }
 
         //  The code above works the same way as the code below:
-        // .    int num;
         // .    for (int i = 0; i < others.length; i++) {
-        // .        num = others[i];
+        // .        int num = others[i];
         // .        System.out.println(num);
         // .    }
 
-        int[][] test = new int[3][3];
+        int[][] test = new int[3][2];
 
         for (int i = 0; i < test.length; i++) {
             for (int j = 0; j < test[i].length; j++) {
@@ -28,18 +27,17 @@ public class ForEach {
         }
 
         for (int[] arrBase : test) {
-            for (int num : arrBase) {
-                System.out.println(num);
+            for (int each : arrBase) {
+                System.out.println(each);
             }
         }
 
         //  The code above works the same way as the code below:
-        // .    int[] arrBase = new int[test.length];
         // .    for (int i = 0; i = test.length; i++) {
-        // .        int num;
+        // .        int[] arrBase = test[i];
         // .        for (int j = 0; j = arrBase.length; j++) {
-        // .            num = arrBase[j];
-        // .            System.out.println(num);
+        // .            int each = arrBase[j];
+        // .            System.out.println(each);
         // .        }
         // .    }
     }
